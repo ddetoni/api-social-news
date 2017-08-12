@@ -1,0 +1,7 @@
+{
+  "social-news-db": {
+    "url": "${CLEARDB_DATABASE_URL}",
+    "name": "social-news-db",
+    "connector": "mysql"
+  }
+}

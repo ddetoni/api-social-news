@@ -1,0 +1,27 @@
+{
+  "name": "servers",
+  "plural": "servers",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idServers": {
+      "type": "number",
+      "id": true
+    },
+    "urlServer": {
+      "type": "string",
+      "required": true
+    },
+    "nameServer": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

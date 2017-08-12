@@ -1,0 +1,33 @@
+{
+  "name": "favorites",
+  "plural": "favorites",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idFavorites": {
+      "type": "number",
+      "id": true
+    },
+    "urlNew": {
+      "type": "string",
+      "required": true
+    },
+    "titleNew": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Users_idUsers": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "Users_idUsers"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

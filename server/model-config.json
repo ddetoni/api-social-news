@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "news": {
+    "dataSource": "social-news-db",
+    "public": true
+  },
+  "users": {
+    "dataSource": "social-news-db",
+    "public": true
+  },
+  "favorites": {
+    "dataSource": "social-news-db",
+    "public": true
+  },
+  "servers": {
+    "dataSource": "social-news-db",
+    "public": true
+  },
+  "comments": {
+    "dataSource": "social-news-db",
+    "public": true
+  }
+}

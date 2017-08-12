@@ -1,0 +1,45 @@
+{
+  "name": "news",
+  "plural": "news",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "tags": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "idNews": {
+      "type": "number",
+      "id": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Users_idUsers": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "Users_idUsers"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
